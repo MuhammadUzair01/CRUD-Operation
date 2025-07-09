@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from fast_api import FastAPI
+from fastapi import FastAPI
 from model import Product
 from db import collection
 from bson import ObjectId
