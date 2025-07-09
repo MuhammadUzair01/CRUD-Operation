@@ -22,7 +22,7 @@ async def get_all_products():
     product=[]                                          # Initialize an empty list to store products
     curser=collection.find()                            # Find all products in the collection
     async for document in curser:                       # Iterate through each document in the cursor
-        document["id"]=str(document["_id"])             # Convert ObjectId to string and add to document
+        document["id"]=str(document["id"])             # Convert ObjectId to string and add to document
         product.append(document)                        # Append each product to the list
     return product                                      # Return the list of products
 
